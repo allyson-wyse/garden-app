@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 30px 0 0 10px;
+}
+
+.spacing-top { padding: 30px 0 0 0; }
+
+.content { padding: 0 20px; }
