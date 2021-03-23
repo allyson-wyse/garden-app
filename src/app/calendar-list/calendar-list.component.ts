@@ -7,7 +7,7 @@ import SeedData from '../../assets/seed-data.json';
   styleUrls: ['./calendar-list.component.css']
 })
 export class CalendarListComponent implements OnInit {
-    displayedColumns: string[] = ['name', 'category', 'recommendation'];
+    displayedColumns: string[] = ['name', 'recommendation', 'outdoorDates', 'indoorDates'];
     tableData: any[];
 
     constructor() { }

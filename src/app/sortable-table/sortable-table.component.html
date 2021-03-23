@@ -1,0 +1,14 @@
+<table class="spacing-top mat-table cdk-table">
+    <tr class="mat-header-row cdk-header-row">
+        <th class="mat-header-cell cdk-header-cell cdk-column-name mat-column-name" (click)="increaseCount()">Plant Name</th>
+        <th class="mat-header-cell cdk-header-cell cdk-column-name mat-column-name">Category</th>
+        <th class="mat-header-cell cdk-header-cell cdk-column-name mat-column-name">Start Seedlings</th>
+    </tr>
+    <tr class="mat-row cdk-row" *ngFor="let item of tableData; index as i;">
+        <td class="mat-cell cdk-cell cdk-column-name mat-column-name">{{ tableData[i].name }}</td>
+        <td class="mat-cell cdk-cell cdk-column-name mat-column-name">{{ tableData[i].category }}</td>
+        <td class="mat-cell cdk-cell cdk-column-name mat-column-name">{{ tableData[i].recommendation }}</td>
+    </tr>
+</table>
+
+<p>Count: {{ clickCount }}</p>

@@ -3,13 +3,17 @@
         <th mat-header-cell *matHeaderCellDef> Plant Name </th>
         <td mat-cell *matCellDef="let item"> {{item.name}} </td>
     </ng-container>
-    <ng-container matColumnDef="category">
-        <th mat-header-cell *matHeaderCellDef> Category </th>
-        <td mat-cell *matCellDef="let item"> {{item.category}} </td>
-    </ng-container>
     <ng-container matColumnDef="recommendation">
-        <th mat-header-cell *matHeaderCellDef> Start Seedlings </th>
+        <th mat-header-cell *matHeaderCellDef> Recommendation </th>
         <td mat-cell *matCellDef="let item"> {{item.recommendation}} </td>
+    </ng-container>
+    <ng-container matColumnDef="outdoorDates">
+        <th mat-header-cell *matHeaderCellDef> Sow Outdoor Dates </th>
+        <td mat-cell *matCellDef="let item"> {{item.outdoorStart}} - {{ item.outdoorEnd }}</td>
+    </ng-container>
+    <ng-container matColumnDef="indoorDates">
+        <th mat-header-cell *matHeaderCellDef> Sow Indoor Dates </th>
+        <td mat-cell *matCellDef="let item"> {{item.indoorStart}}<span *ngIf="item.indoorStart"> - </span>{{ item.indoorEnd }}</td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

@@ -27,8 +27,6 @@
             "outdoorStart": "03/26",
             "outdoorEnd": "04/09",
             "indoorDesc": "not recommended",
-            "indoorStart": "",
-            "indoorEnd": "",
             "recommendation": "Outdoors"
         },{
             "name": "Marigolds",
@@ -57,8 +55,6 @@
             "outdoorStart": "03/12",
             "outdoorEnd": "03/26",
             "indoorDesc": "not recommended",
-            "indoorStart": "",
-            "indoorEnd": "",
             "recommendation": "Outdoors"
         },{
             "name": "Zinnias",
